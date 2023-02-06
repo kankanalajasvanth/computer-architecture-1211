@@ -1,0 +1,33 @@
+#include<stdlib.h>
+#include<stdio.h>
+int acum[100]={0} ;
+void add(int acum[],int b[],int n);
+int q[100],b[100];
+int main()
+{
+int x,y;
+printf("Enter the Number :");
+scanf("%d%d",&x,&y);
+int i=0;
+while(x>0||y>0)
+{
+if(x>0)
+{
+q[i]=x%2;
+x=x/2;
+}
+else 
+{
+q[i]=0;
+}
+if(y>0)
+{
+b[i]=y%2;
+y=y/2;
+}
+else 
+{
+b[i]=0;
+}
+i++;
+}
